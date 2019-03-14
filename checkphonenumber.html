@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>isPhonenumber</title>
+</head>
+<body>
+<button onclick="checkphonenumber(prompt('Nhập 1 số điện thoại'))"> is_PhoneNumber?</button>
+<script>
+    let regexpatt=/^\([0-9]{2}\)-\(0[[0-9]{9}\)$/
+    function checkphonenumber(a) {
+        if (regexpatt.test(a)){alert("Yes")  }else {alert("No")}
+    }
+</script>
+</body>
+</html>
